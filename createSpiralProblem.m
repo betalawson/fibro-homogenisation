@@ -10,7 +10,7 @@ Lx = 6;
 Ly = 6;
 
 % Define mesh spacing (in microns)    
-mesh_spacing = 10;
+mesh_spacing = 100;
 
 % Stimulus regions are the left and right edges of the domain (left
 % primary, right secondary)
