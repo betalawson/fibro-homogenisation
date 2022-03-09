@@ -102,7 +102,7 @@ beta_K1 = ( 3 * exp( 0.0002 * (dV_K + 100 ) ) + exp( 0.1 * (dV_K - 10) ) ) ./ ( 
 xK1_inf = alpha_K1 ./ ( alpha_K1 + beta_K1 );
 
 % L-type Ca2+ gates
-d_inf = 1 ./ ( 1 + exp( -(V+8)/7.5 ) );       % Re-using calculations to evaluated exp( -(5 + V)/7.5 )
+d_inf = 1 ./ ( 1 + exp( -(V+8)/7.5 ) );
 f_inf = 1 ./ ( 1 + exp( (V+20)/7 ) );
 tau_f =  1102.5 * exp( -( (V + 27)/15).^2 ) + 200 ./ ( 1 + exp( (13 - V) / 10 ) ) + 180 ./ ( 1 + exp( (V+30)/10 ) ) + 20;
 tau_f = tau_f + tau_f .* (V >= 0);   % Double the value of tau_f for V >= 0
