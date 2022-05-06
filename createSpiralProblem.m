@@ -3,7 +3,7 @@ function createSpiralProblem(filename)
 % it with fibrotic occlusions of the requested density.
 
 % Define the diffusion tensor
-D = [ 1, 0; 0, 1 ];    % Fibre-biased conduction
+D = [ 3, 0; 0, 3 ];    % Fibre-biased conduction
 
 % Define the physical size of the problem (in centimetres)
 Lx = 6;
